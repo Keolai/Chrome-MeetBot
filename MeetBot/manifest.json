@@ -1,0 +1,33 @@
+{
+"name": "MeetBot",
+"version": "0.8",
+"description": "Joins your google meets automatically!",
+"icons": { "16" : "icon16.png",
+           "48" : "icon48.png",
+           "128": "icon128.png" }, 
+"author": "Keolailani Rose", 
+"permissions": ["alarms", "tabs", "declarativeContent", "storage", "https://*/*","http://*/*" ], 
+"background":{
+"scripts": ["background.js"], 
+"persistent": true
+}, 
+"content_security_policy": "script-src 'self' http://localhost; object-src 'self'", 
+"content_scripts": [
+ {
+    "matches": ["https://meet.google.com/*"], 
+    "run_at": "document_start",
+    "js": ["content.js"]
+    }
+], 
+"browser_action": {
+    "default_popup": "mainpage.html",
+    "default_icon": "icon48.png" 
+    
+    }, 
+"externally_connectable": {
+        "ids": ["*"],
+        "matches": ["https://meet.google.com/*"],
+        "accepts_tls_channel_id": false
+      },
+"manifest_version": 2
+} 
