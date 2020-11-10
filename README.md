@@ -25,3 +25,5 @@ To use, simply click on the extension icon to open the main page, then click on 
 **Features that will be added**
 * Individual time/link reset buttons
 * Current configuration page
+
+**Feel free to contact me with any questions, comments or concerns!**
