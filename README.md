@@ -11,6 +11,7 @@ Simply enter the time and the link of your meet, and your computer will join by 
 **How to Use**
 
 This extension is not currently on the chrome webstore, so it must be downloaded and uploaded to chrome manually by enabling developer mode.
+When uploading to chrome, upload the folder titled "MeetBot", not the entire download folder. 
 
 To use, simply click on the extension icon to open the main page, then click on the page you would like to configure. 
 
