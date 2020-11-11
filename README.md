@@ -20,7 +20,6 @@ To use, simply click on the extension icon to open the main page, then click on 
 * When entering the time, **do not** add a colon between time and minutes.
 * Use whole links (including the HTTPS portion!)
 * When configuring a page, click the reset button before you hit save. The data will not be updated if you do not do so. 
-* Refresh the extension or close the browser after you configure a day. 
 
 **Features that will be added**
 * Individual time/link reset buttons
