@@ -63,7 +63,6 @@ var sminutesLow = bminFix;
 } else {
 var sminutesLow = minutesLow.toString();
 } 
-console.log(sminutesLow); 
 
 if (minutesHigh > -1 && minutesHigh < 10){ 
 var aminFix = minutesHigh.toString();
