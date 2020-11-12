@@ -18,7 +18,7 @@ if (settings.length > 0 ){ //checks to see if popup exists
 //the settings popup on the bottom confuses the script, this gets rid of it 
 document.getElementsByClassName('x95qze')[0].click(); 
     function exit(){
-    document.getElementsByClassName('GmuOkf')[0].click(); 
+    document.getElementsByClassName('U26fgb mUbCce fKz7Od Wtw8H kHssdc pPQgvf M9Bg4d')[0].click();
     }
 setTimeout(exit, 1000); 
 }
