@@ -8,7 +8,7 @@ OpenPopUpWindowMon();
 function OpenPopUpWindowMon()
 {
  var url = "mon.html";
-myRef = window.open(url ,'mywin','left=20,top=20,width=900,height=350,toolbar=1,resizable=0');
+myRef = window.open(url ,'mywin','left=300,top=300,width=650,height=350,toolbar=1,resizable=0');
 myRef.focus()
 } 
 
@@ -22,7 +22,7 @@ OpenPopUpWindowTues();
 function OpenPopUpWindowTues()
 {
  var url = "tues.html";
-myRef = window.open(url ,'mywin','left=20,top=20,width=900,height=350,toolbar=1,resizable=0');
+myRef = window.open(url ,'mywin','left=300,top=300,width=650,height=350,toolbar=1,resizable=0');
 myRef.focus()
 } 
 
@@ -36,7 +36,7 @@ OpenPopUpWindowWed();
 function OpenPopUpWindowWed()
 {
  var url = "wed.html";
-myRef = window.open(url ,'mywin','left=20,top=20,width=900,height=350,toolbar=1,resizable=0');
+myRef = window.open(url ,'mywin','left=300,top=300,width=650,height=350,toolbar=1,resizable=0');
 myRef.focus()
 } 
 
@@ -50,7 +50,7 @@ OpenPopUpWindowThurs();
 function OpenPopUpWindowThurs()
 {
  var url = "thurs.html";
-myRef = window.open(url ,'mywin','left=20,top=20,width=900,height=350,toolbar=1,resizable=0');
+myRef = window.open(url ,'mywin','left=300,top=300,width=650,height=350,toolbar=1,resizable=0');
 myRef.focus()
 } 
 
@@ -64,7 +64,7 @@ OpenPopUpWindowFri();
 function OpenPopUpWindowFri()
 {
  var url = "fri.html";
-myRef = window.open(url ,'mywin','left=20,top=20,width=900,height=350,toolbar=1,resizable=0');
+myRef = window.open(url ,'mywin','left=300,top=300,width=650,height=350,toolbar=1,resizable=0');
 myRef.focus()
 } 
 
@@ -78,7 +78,7 @@ OpenPopUpWindowSat();
 function OpenPopUpWindowSat()
 {
  var url = "sat.html";
-myRef = window.open(url ,'mywin','left=20,top=20,width=900,height=350,toolbar=1,resizable=0');
+myRef = window.open(url ,'mywin','left=300,top=300,width=650,height=350,toolbar=1,resizable=0');
 myRef.focus()
 } 
 
@@ -92,6 +92,6 @@ OpenPopUpWindowSun();
 function OpenPopUpWindowSun()
 {
  var url = "sun.html";
-myRef = window.open(url ,'mywin','left=20,top=20,width=900,height=350,toolbar=1,resizable=0');
+myRef = window.open(url ,'mywin','left=300,top=300,width=650,height=350,toolbar=1,resizable=0');
 myRef.focus()
 } 
