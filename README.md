@@ -17,13 +17,13 @@ To use, simply click on the extension icon to open the main page, then click on 
 
 **Quirks to Keep in Mind**
 * Use military time.
-* When entering the time, **do not** add a colon between time and minutes.
 * Use whole links (including the HTTPS portion!)
 * When configuring a page, click the reset button before you hit save. The data will not be updated if you do not do so. 
 
 **Features that will be added**
 * Individual time/link reset buttons
 * Current configuration page
+* Page where you can configure multiple days at once with the same data
 
 **Potential Changes**
 * Combine reset and save button functionality
