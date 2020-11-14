@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
 <script src="popup.js"></script> 
+<style>
+.button {
+    background-color: #db490f; 
+    color: white; 
+    border: none; 
+    text-align: center;
+    cursor: pointer;
+    width: 90px;
+    height: 27px;
+    margin: 2px 1px;
+}
+.button:hover {background-color: #ba3e0d}
+
+.button:active {
+  background-color: #ba3e0d;
+  transform: translateY(1px);
+</style> 
 <label>
 Manage the schedule of the bot by clicking the buttons below!  
 <br> 
-<button id="Manage_Mon">Manage Monday</button>
-<button id="Manage_Tues">Manage Tuesday</button>
-<button id="Manage_Wed">Manage Wednsday</button>
-<button id="Manage_Thurs">Manage Thursday</button>
-<button id="Manage_Fri">Manage Friday</button>
-<button id="Manage_Sat">Manage Saturday</button>
-<button id="Manage_Sun">Manage Sunday</button>
+<button class="button" id="Manage_Mon">Monday</button>
+<button class="button" id="Manage_Tues">Tuesday</button>
+<button class="button" id="Manage_Wed">Wednsday</button>
+<button class="button" id="Manage_Thurs">Thursday</button>
+<button class="button" id="Manage_Fri">Friday</button>
+<button class="button" id="Manage_Sat">Saturday</button>
+<button class="button" id="Manage_Sun">Sunday</button>
 
 
 </html> 
-
-
-
-
