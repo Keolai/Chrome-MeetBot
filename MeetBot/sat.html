@@ -1,59 +1,76 @@
+<style>
+.button {
+    background-color: #db490f; 
+    color: white; 
+    border: none; 
+    text-align: center;
+    cursor: pointer;
+    width: 90px;
+    height: 27px;
+    margin: 5px 1px;
+}
+.button:hover {background-color: #ba3e0d}
+
+.button:active {
+  background-color: #ba3e0d;
+  transform: translateY(1px);
+</style> 
 <b>Saturday</b>
 <br> 
 <label> 
 Enter the whole link, with the https in front.
 <br>
-To enter the time, enter the hours (0-24) and then the minutes, without a colon in between. 
+Use military time (Ex- 1:00 PM becomes 1300). 
 </labe> 
 <label>
-<br>Input Period Start Time-
+<br>Time-
 <input type="number" id="satper1" value="0">
-Input Class Link-
+Link-
 <input type="text" id="satlink1" value="none"> 
 </label>
 <label> 
-<br>Input Period Start Time-
+<br>Time-
 <input type="number" id="satper2" Value="0">
-Input Class Link-
+Link-
 <input type="text" id="satlink2" value="none">
 </label>
 <label> 
-<br>Input Period Start Time-
+<br>Time-
 <input type="number" id="satper3" value="0">
-Input Class Link- 
+Link- 
 <input type="text" id="satlink3" value="none"> 
 </label>
 <label> 
-<br>Input Period Start Time-
+<br>Time-
 <input type="number" id="satper4" value="0">
-Input Class Link-
+Link-
 <input type="text" id="satlink4" value="none"> 
 </label>
 <label> 
-<br>Input Period Start Time-
+<br>Time-
 <input type="number" id="satper5" value="0">
-Input Class Link- 
+Link- 
 <input type="text" id="satlink5" value="none"> 
 </label>
 <label> 
-<br>Input Period Start Time-
+<br>Time-
 <input type="number" id="satper6" value="0">
-Input Class Link- 
+Link- 
 <input type="text" id="satlink6" value="none"> 
 </label>
 <label> 
-<br>Input Period Start Time-
+<br>Time-
 <input type="number" id="satper7" value="0">
-Input Class Link- 
+Link- 
 <input type="text" id="satlink7" value="none"> 
 </label>
 <label> 
-<br>Input Period Start Time-
+<br>Time-
 <input type="number" id="satper8" value="0">
-Input Class Link- 
+Link- 
 <input type="text" id="satlink8" value="none"> 
 </label>
 <br>
-<button id="savesat">Save</button>
-<button id="clearsat">Reset</button> 
+<button class="button" id="savesat">Save</button>
+<button class="button" id="clearsat">Reset</button> 
 <script src="meetsatpers.js"></script> 
