@@ -21,41 +21,41 @@ var frilink1 = document.getElementById('frilink1').value;
 chrome.storage.local.set({ 'frilink1' : frilink1 }); 
  
 var friper2 = document.getElementById('friper2').value;
-chrome.storage.sync.set({'friper2' : friper2, }); 
+chrome.storage.local.set({'friper2' : friper2, }); 
 var frilink2 = document.getElementById('frilink2').value;
-chrome.storage.sync.set({'frilink2' : frilink2 }); 
+chrome.storage.local.set({'frilink2' : frilink2 }); 
 
 var friper3 = document.getElementById('friper3').value;
-chrome.storage.sync.set({'friper3' : friper3 }); 
+chrome.storage.local.set({'friper3' : friper3 }); 
 var frilink3 = document.getElementById('frilink3').value;
-chrome.storage.sync.set({'frilink3' : frilink3 }); 
+chrome.storage.local.set({'frilink3' : frilink3 }); 
 
 
 var friper4 = document.getElementById('friper4').value;
-chrome.storage.sync.set({'friper4' : friper4, }); 
+chrome.storage.local.set({'friper4' : friper4, }); 
 var frilink4 = document.getElementById('frilink4').value;
-chrome.storage.sync.set({'frilink4' : frilink4 }); 
+chrome.storage.local.set({'frilink4' : frilink4 }); 
 
 
 var friper5 = document.getElementById('friper5').value;
-chrome.storage.sync.set({'friper5' : friper5 }); 
+chrome.storage.local.set({'friper5' : friper5 }); 
 var frilink5 = document.getElementById('frilink5').value;
-chrome.storage.sync.set({'frilink5' : frilink5 }); 
+chrome.storage.local.set({'frilink5' : frilink5 }); 
 
 var friper6 = document.getElementById('friper6').value;
-chrome.storage.sync.set({'friper6' : friper6 }); 
+chrome.storage.local.set({'friper6' : friper6 }); 
 var frilink6 = document.getElementById('frilink6').value;
-chrome.storage.sync.set({'frilink6' : frilink6 }); 
+chrome.storage.local.set({'frilink6' : frilink6 }); 
 
 var friper7 = document.getElementById('friper7').value;
-chrome.storage.sync.set({'friper7' : friper7 }); 
+chrome.storage.local.set({'friper7' : friper7 }); 
 var frilink7 = document.getElementById('frilink7').value;
-chrome.storage.sync.set({'frilink7' : frilink7 }); 
+chrome.storage.local.set({'frilink7' : frilink7 }); 
 
 var friper8 = document.getElementById('friper8').value;
-chrome.storage.sync.set({'friper8' : friper8 }); 
+chrome.storage.local.set({'friper8' : friper8 }); 
 var frilink8 = document.getElementById('frilink8').value;
-chrome.storage.sync.set({'frilink8' : frilink8 }); 
+chrome.storage.local.set({'frilink8' : frilink8 }); 
 }
 
 function clear_friAll(){
