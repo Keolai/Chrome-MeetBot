@@ -2135,7 +2135,7 @@ function populateLinkEight(){
 }//end of time8
 break; 
 default: //incase it doesn't get time correctly (bug catcher) 
-message("[ERROR] : I can't find the day, help!"); 
+console.log("[ERROR] : I can't find the day, help!"); 
 
 } 
 
