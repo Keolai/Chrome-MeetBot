@@ -24,6 +24,7 @@ To use, simply click on the extension icon to open the main page, then click on 
 * Individual time/link reset buttons
 * Current configuration page
 * Page where you can configure multiple days at once with the same data
+* Extension detects whether it has successfully joined the meet or not
 
 **Potential Changes**
 * Combine reset and save button functionality
