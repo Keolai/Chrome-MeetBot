@@ -2243,7 +2243,7 @@ chrome.tabs.query({active: true, currentWindow: true},function(tabs) {
         var currentB = tabs[0]; 
         chrome.tabs.remove(currentB.id, function() { });
         }); 
-      setTimeout(openlink, 15000); 
+      setTimeout(openLink, 15000); 
       
       } else {
       link = "none"; 
