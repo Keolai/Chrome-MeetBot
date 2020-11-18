@@ -17,8 +17,9 @@ To use, simply click on the extension icon to open the main page, then click on 
 
 **Quirks to Keep in Mind**
 * Use military time.
-* Use whole links (including the HTTPS portion!)
+* Use whole links (including the HTTPS portion!).
 * When configuring a page, click the reset button before you hit save. The data will not be updated if you do not do so. 
+* If the extension detects a meet open in the first tab when it is trying to open a new meet, it will abort. This is to prevent spamming in the case of an error. 
 
 **Features that will be added**
 * Individual time/link reset buttons
