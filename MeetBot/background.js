@@ -14,7 +14,6 @@ chrome.runtime.onStartup.addListener(function() {
 chrome.alarms.create("2min", {periodInMinutes: 2} ); 
 chrome.alarms.onAlarm.addListener(function(alarm) { 
     if (alarm.name === "2min"){
-    console.log("firing"); 
     getTime();
     }
 }); 
@@ -24,7 +23,6 @@ chrome.runtime.onInstalled.addListener(function() {
 chrome.alarms.create("2Min", {periodInMinutes: 2} ); 
 chrome.alarms.onAlarm.addListener(function(alarm) { 
     if (alarm.name === "2Min"){
-    console.log("firing"); 
     getTime();
     }
 }); 
@@ -82,8 +80,6 @@ var stimeLow = shourLow + sminutesLow;
 
 var timeUp = parseInt(stimeUp, 10);
 var timeLow = parseInt(stimeLow, 10); 
-
-console.log("finding day"); 
 
 switch(day){
 
@@ -2138,7 +2134,7 @@ default: //incase it doesn't get time correctly (bug catcher)
 console.log("[ERROR] : I can't find the day, help!"); 
 
 } 
-
+//END OF SWITCH
 function openLink(){ //opens selected link 
 
 var stringchecker; 
@@ -2149,34 +2145,13 @@ stringcheckerTwo = link.includes('none');
 
 if (stringchecker == true && stringcheckerTwo == false) {
 
-getURLS();  
-function getURLS() { // S for SEE o-o
-    return new Promise(function(resolve, reject) {
-        chrome.tabs.query({'active': true, 'windowId': chrome.windows.WINDOW_ID_CURRENT},function(tab) {
-    resolve(tab[0].url); //gets url of tab 0 to see if our meet is already open 
-         })
-    });
-}
-
-setURLS(); 
-function setURLS(){
-    getURLS().then(function(value) {
-        taburl = value;
-        var checktab = taburl.includes("meet"); 
-        if (checktab == true){
-            console.log("meet detected in tab[0], failing..."); 
-            fail();
-            } 
-       }) 
-    }
-
-chrome.tabs.create({ url: link, index: 0 }); //opens in tab 0 
-setTimeout(controlUrl, 5000); //gives time for page to lead 
+    chrome.tabs.create({ url: link, index: 0 }); //opens in tab 0 
+    setTimeout(controlUrl, 5000); //gives time for page to lead 
 
 } else {
 
-fail();
-} 
+    fail();
+    } 
 }
 
 var currentUrl; 
@@ -2197,8 +2172,11 @@ setURLF();
 function setURLF(){
     getURLF().then(function(value) {
         currentUrl = value;
-        checkUrl(); 
-        
+        if (currentUrl == undefined){
+            setTimeout(getURLF, 3000); 
+        } else {
+            checkUrl(); 
+        }
        }) 
     }
 
@@ -2225,36 +2203,37 @@ setTimeout(openLink, 20000); //gives time for the page to update/for meet to sta
 
 } else if (contains3 == true){ 
 
-console.log("sign-in required to procede, failing..."); 
+    console.log("sign-in required to procede, failing..."); 
 
-fail(); 
+    fail(); 
 
 } else { 
 //triggers content script to run by messaging it
-console.log("triggering content script"); 
+    console.log("triggering content script"); 
 
-chrome.tabs.query({active: true, currentWindow: true},function(tabs) {
-  chrome.tabs.sendMessage(tabs[0].id, {greeting: "hello"}, function(response) {
-      console.log(response);
-      var rcheck = response.includes("bad");
-      if (rcheck == true){
+    chrome.tabs.query({active: true, currentWindow: true},function(tabs) {
+      chrome.tabs.sendMessage(tabs[0].id, {greeting: "hello"}, function(response) {
+          console.log(response);
+         var rcheck = response.includes("bad");
+         if (rcheck == true){
       
-      chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        var currentB = tabs[0]; 
-        chrome.tabs.remove(currentB.id, function() { });
-        }); 
-      setTimeout(openLink, 15000); 
+         chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+           var currentB = tabs[0]; 
+          chrome.tabs.remove(currentB.id, function() { });
+           }); 
+       
+         setTimeout(openLink, 15000); 
       
-      } else {
-      link = "none"; 
-      console.clear(); 
-      }
-  });
-});
+        } else {
+        link = "none"; 
+        console.clear(); 
+       }
+     });
+    });
 } 
 } 
 
 function fail(){
-console.log("unable to join meet"); 
+    console.log("unable to join meet"); 
 } 
 } //end of main function 
