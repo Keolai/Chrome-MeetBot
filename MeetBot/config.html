@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+  <script src= config.js></script> 
+  <style>
+  body {
+	background: white;
+  }
+  
+  .main {                                                           
+	text-align: center;
+  }
+  
+  .title {
+	text-align: center;
+  }
+  
+  /* buttons */
+  .button {
+      background-color: #db490f; 
+	  border: none;
+	  color: white;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  margin: 3px 1px;
+	  cursor: pointer;
+	  width: 90px;
+	  height: 35px;
+	}
+	.button:active {
+  background-color: #ba3e0d;
+  transform: translateY(1px);
+    } 
+	.button1:hover {
+	  background-color: #ba3e0d;
+	}
+	
+	.button2:hover {
+	  background-color: #ba3e0d;
+	}
+
+	/* Columns & Rows */
+	.column1 {
+	  float: left;
+	  text-align: center;
+	  display: block; 
+	  padding-top: 25px; 
+	}
+	.column2 {
+	  float: right;
+	  text-align: center;
+	  display:block;
+	  padding-top: 25px; 
+	}
+	
+	
+	.row-bottom {
+	 content: "";
+	 display: table;
+	 clear: both;
+	 margin-left: auto;
+	 margin-right: auto; 
+	 padding-top: 37px; 
+	 } 
+	 .column-center { 
+	 text-align: center;
+	 
+	 } 
+  </style>
+</head>
+<body>
+	<div class="title">
+		<b>Current Configuration</b>
+	</div>
+	<div class="main">
+		
+			<div class="column1">
+				<button type="button" class="button button1" id="Mon">Monday</button>
+		<br>
+				<button type="button" class="button button2" id="Tues">Tuesday</button>
+		<br> 
+				<button type="button" class="button button2" id="Wed">Wednesday</button>
+			</div>
+			<div class="column2">
+				<button type="button" class="button button2" id="Thurs">Thursday</button>
+		<br>
+				<button type="button" class="button button2" id="Fri">Friday</button>
+		<br>
+				<button type="button" class="button button2" id="Sat">Saturday</button>
+			</div>
+		
+		<div class="row-bottom">
+			<div class="column-center">
+				<button type="button" class="button button1" id="Sun">Sunday</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
