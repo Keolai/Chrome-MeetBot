@@ -14,6 +14,22 @@
 .button:active {
   background-color: #ba3e0d;
   transform: translateY(1px);
+  }
+.ibutton {
+    background-color: #db490f; 
+    color: white; 
+    border: none; 
+    text-align: center;
+    cursor: pointer;
+    width: 45px;
+    height: 20px;
+    margin: 2px 1px;
+}
+.ibutton:hover {background-color: #ba3e0d}
+
+.ibutton:active {
+  background-color: #ba3e0d;
+  transform: translateY(1px);
 </style> 
 <b>Monday</b>
 <br> 
@@ -21,56 +37,64 @@
 Enter the whole link, with the https in front.
 <br>
 Use military time (Ex- 1:00 PM becomes 1300). 
-</labe> 
+</label> 
 <label>
 <br>Time-
-<input type="number" id="monper1" value="0">
+<input type="number" id="monper1" value="0" min="0000" max="2359" size="4">
 Link-
-<input type="text" id="monlink1" value="none"> 
+<input type="text" id="monlink1" value="none" size="34"> 
 </label>
+<button class="ibutton" id="time1">Save</button>
 <label> 
 <br>Time-
-<input type="number" id="monper2" Value="0">
+<input type="number" id="monper2" value="0" min="0000" max="2359" size="4">
 Link-
-<input type="text" id="monlink2" value="none">
+<input type="text" id="monlink2" value="none" size="34">
 </label>
+<button class="ibutton" id="time2">Save</button>
 <label> 
 <br>Time-
-<input type="number" id="monper3" value="0">
+<input type="number" id="monper3" value="0" min="0000" max="2359" size="4">
 Link- 
-<input type="text" id="monlink3" value="none"> 
+<input type="text" id="monlink3" value="none" size="34"> 
 </label>
+<button class="ibutton" id="time3">Save</button>
 <label> 
 <br>Time-
-<input type="number" id="monper4" value="0">
+<input type="number" id="monper4" value="0" min="0000" max="2359" size="4">
 Link-
-<input type="text" id="monlink4" value="none"> 
+<input type="text" id="monlink4" value="none" size="34"> 
 </label>
+<button class="ibutton" id="time4">Save</button>
 <label> 
 <br>Time-
-<input type="number" id="monper5" value="0">
+<input type="number" id="monper5" value="0" min="0000" max="2359" size="4">
 Link- 
-<input type="text" id="monlink5" value="none"> 
+<input type="text" id="monlink5" value="none" size="34"> 
 </label>
+<button class="ibutton" id="time5">Save</button>
 <label> 
 <br>Time-
-<input type="number" id="monper6" value="0">
+<input type="number" id="monper6" value="0" min="0000" max="2359" size="4">
 Link- 
-<input type="text" id="monlink6" value="none"> 
+<input type="text" id="monlink6" value="none" size="34"> 
 </label>
+<button class="ibutton" id="time6">Save</button>
 <label> 
 <br>Time-
-<input type="number" id="monper7" value="0">
+<input type="number" id="monper7" value="0" min="0000" max="2359" size="4">
 Link- 
-<input type="text" id="monlink7" value="none"> 
+<input type="text" id="monlink7" value="none" size="34"> 
 </label>
+<button class="ibutton" id="time7">Save</button>
 <label> 
 <br>Time-
-<input type="number" id="monper8" value="0">
+<input type="number" id="monper8" value="0" min="0000" max="2359" size="4">
 Link- 
-<input type="text" id="monlink8" value="none"> 
+<input type="text" id="monlink8" value="none" size="34"> 
 </label>
+<button class="ibutton" id="time8">Save</button>
 <br>
-<button class="button" id="savemon">Save</button>
-<button class="button" id="clearmon">Reset</button> 
+<button class="button" id="savemon">Save All</button>
+<button class="button" id="clearmon">Reset All</button> 
 <script src="meetmonpers.js"></script> 
