@@ -15,20 +15,17 @@ When uploading to chrome, upload the folder titled "MeetBot", not the entire dow
 
 To use, simply click on the extension icon to open the main page, then click on the page you would like to configure. 
 
+To see the current configuration, head to the "current configuration" page, and select the day you would like to see. 
+
 **Quirks to Keep in Mind**
 * Use military time.
 * Use whole links (including the HTTPS portion!).
-* When configuring a page, click the reset button before you hit save. The data will not be updated if you do not do so. 
-* If the extension detects a meet open in the first tab when it is trying to open a new meet, it will abort. This is to prevent spamming in the case of an error. 
 
 **Features that will be added**
-* Individual time/link reset buttons
-* Current configuration page
 * Page where you can configure multiple days at once with the same data
 * Extension detects whether it has successfully joined the meet or not
 
 **Potential Changes**
-* Combine reset and save button functionality
 * Recall storage items in an array
 * Find a way to change persistance to false, without losing functionality
 
