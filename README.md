@@ -2,9 +2,6 @@
 
 Simply enter the time and the link of your meet, and your computer will join by itself! This extension should work in any browser that is based on chromium.
 
-# TESTING VERSION
-*Bugs may be present!*
-
 **DISCLAIMER**
 : This software is **NOT** meant to be used in a way that allows students to skip class! This software is only designed to automate the class joining process, any other uses are prohibited. The software is provided "as is" and "with all faults". I, the developer, am not liable for any damages this software may cause. There are inherent dangers in using any type of software, and it is up to your discretion on whether this software is compatible with your hardware or any other software installed on your machine. You are solely responsible for your equipment and data, and I am not be liable for any damages you may suffer when using, modifying, or distributing this software. 
 
