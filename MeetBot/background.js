@@ -2227,6 +2227,7 @@ setTimeout(openLink, 20000); //gives time for the page to update/for meet to sta
         } else {
         link = "none"; 
         console.clear(); 
+        console.log("Meet joined!"); 
        }
      });
     });
