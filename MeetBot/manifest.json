@@ -1,6 +1,6 @@
 {
 "name": "MeetBot",
-"version": "0.8",
+"version": "1.1",
 "description": "Joins your google meets automatically!",
 "icons": { "16" : "icon16.png",
            "19" : "icon19.png", 
